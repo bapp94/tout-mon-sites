@@ -1,0 +1,41 @@
+{% extends "TROISWAPlatformBundle::layout.html.twig" %}
+
+{% block title %}
+  Accueil - {{ parent() }}
+{% endblock %}
+
+
+{% block page_title %}
+	<h1>Accueil</h1>
+{% endblock %}
+
+{% block troiswaplatform_body %}
+
+    <h1>Hello {{ nom }}</h1>
+
+
+    <p>
+      Le Hello World est un grand classique en programmation.
+      Il signifie énormément, car cela veut dire que vous avez
+      réussi à exécuter le programme pour accomplir une tâche simple :
+      afficher ce hello world !
+    </p>
+
+    {% if nom != 'gege' %}
+     
+     	<p>vous n'êtes pas gege</p>
+
+    {% elseif nom != 'Thib' %}
+
+    	<p>vous êtes Thib</p>
+     
+    {% endif %}
+
+    
+    {% for letter in hh %}
+    	<p>{{ letter }}</p>
+  	{% endfor %}
+
+  	<a href="{{ path('troiswa_platform_homepage', {'id': 128, name: 'gege'}) }}">Va voir gege</a>
+
+{% endblock %}

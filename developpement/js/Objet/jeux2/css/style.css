@@ -1,0 +1,47 @@
+body{
+	display: flex;
+	flex-wrap: wrap;
+}
+.perso{
+	width: 33%;
+	height: 400px;
+	background-image: url(https://vignette.wikia.nocookie.net/les-simpson-springfield/images/1/1b/Homer_le_colosse.png/revision/latest?cb=20150107011524&path-prefix=fr);
+	background-size:cover;
+	background-position: center-bottom;
+}
+.button{
+	width: 100%;
+	height: 400px;
+	text-align: center;
+}
+
+.ennemie{
+	background-image: url(https://i.ytimg.com/vi/OSI102cY3sE/maxresdefault.jpg);
+	width: 33%;
+	height: 400px;
+	background-size:cover;
+	background-position: bottom;
+}
+.affichage{
+	width: 33%;
+	text-align: center;
+	font-size: 2rem;
+}
+.title{
+	width: 100%;
+	text-align: center;
+}
+h1{
+	font-size: 3rem;
+}
+body {
+	background-color: #4c394b;
+}
+
+button{
+	border:none;
+	padding:10px;
+	background-color: #784334;
+	color:orangered;
+	margin:10px;
+}

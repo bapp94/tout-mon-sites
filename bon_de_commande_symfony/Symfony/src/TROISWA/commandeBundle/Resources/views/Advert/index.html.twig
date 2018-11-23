@@ -1,0 +1,37 @@
+{% extends "commandeBundle::layout.html.twig" %}
+
+
+{% block title %}
+    {{ parent() }}
+{% endblock %}
+
+
+{% block page_title %}
+	<h1>Bon de commande</h1>
+{% endblock %}
+
+{% block troiswaplatform_body %}
+
+
+    <table>
+    	<thead>
+    		<th> commande</th>
+    		<th>date de la commande</th>
+    		<th>date de livraison</th>
+    		<th>Statut</th>
+    	</thead>
+    	<tbody>
+    		{% for list in listAdverts %}
+    			<tr>
+    				<td><a href="{{ path('commande_order',{ 'id' : list.ordernumber})}}">{{ list.orderNumber }}</a></td>
+    				<td>{{ list.requireddate|date('d/m/Y') }}</td>
+    				<td>{{ list.shippeddate|date('d/m/Y') }}</td>
+    				<td>{{ list.status }}</td>
+    			{% endfor %}
+    	</tbody>
+    </table>
+	 
+  
+</ul>
+
+{% endblock %}

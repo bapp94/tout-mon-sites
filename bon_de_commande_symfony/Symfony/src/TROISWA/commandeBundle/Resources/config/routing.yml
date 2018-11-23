@@ -1,0 +1,9 @@
+commande_homepage:
+    path:     /
+    defaults: { _controller: commandeBundle:Advert:index }
+
+commande_order:
+    path:     /order/{id}
+    defaults: { _controller: commandeBundle:Advert:order }
+    requirements:
+        id: \d+

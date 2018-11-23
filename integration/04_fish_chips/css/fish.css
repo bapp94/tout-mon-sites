@@ -1,0 +1,167 @@
+/******** 1.0 GENERAL rule *******************/
+*{
+  box-sizing: border-box;
+}
+body{
+   font-family: "Open Sans", sans-serif;
+   background-image: url(../img/fond.png);
+   width: auto;
+   margin:0;
+   color: #444;
+   line-height: 1.3;
+   padding-top: 50px;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/********* 2.0 HEADER rules *************/
+.header-main{
+  background-color: #26b3b4;
+  /* margin-top: 50px; */
+  border-top: 3px solid #208e94;
+  border-bottom: 3px solid #208e94;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.logo{
+  width: 250px;
+  margin-bottom: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  font-family: "Slabo 27px";
+  margin: 0 15px;/* 2 valeur 1er = top et bottom la seconde rgauche et droite*/
+  background-color: rgba(255,255,255,0.2);
+  padding:50px; /*depase du block header car c'est un element en inline  */
+  display: inline-block;
+  transition: all 300ms;
+}
+nav a:hover{
+  background-color: transparent;
+  color:#208e94;
+
+}
+/**********3.0 BODY rules  ******************/
+.intro{
+  text-align: center;
+  margin-top: 50px;
+  padding: 0, 10%;
+}
+.site-title{
+  font-size: 2em;
+  font-family: "Slabo 27px";
+  font-weight: normal;
+}
+h1,
+h2,
+h3,
+h4{
+  font-family: "Slabo 27px";
+  text-align: center;
+}
+.recipes{
+  width: 68%;
+  background-color: rgba(255,255,255,0.4);
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 2%;
+  padding: 25px;
+}
+
+.item-recipe{
+  width: 50%;
+  float: left;
+  font-size: 0.9em;
+  padding: 10px;
+}
+span {
+  color: #208e94;
+}
+.item-recipe img {
+  float: left;
+  border-radius:50%;
+}
+.item-title {
+  font-size: 1.5rem;
+  font-family: "Slabo 27px";
+}
+.cta{
+  float: right;
+  background-color: #208e94;
+  padding: 10px;
+  color:white;
+  text-decoration: none;
+}
+.news{
+  display: inline-block;
+  width: 30%;
+  background-color: #26b3b4;
+  vertical-align: top;/* permet d'aligner les section en hauteur*/
+  color: white;
+  border: 4px solid #208e94;
+  /* overflow: hidden; */
+}
+.vignette {
+  float: right;
+  margin-top: -40px;
+  margin-right: -40px;
+  width: 90px;
+}
+ul {
+  list-style: none;
+  padding:10px;
+}
+li{
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+ul strong{
+  color:#444;
+}
+ul i {
+  color: white;
+}
+.fa-tint{
+  color:blue;
+}
+footer{
+  text-align: center;
+}
+@media screen and (max-width: 1024px)
+{
+  nav a {
+    display:block;
+  }
+  .item-recipe{
+    float:none;
+    width: 100%;
+    margin-bottom:20px;
+  }
+  .vignette{
+    display: none;
+}
+}
+@media screen and (max-width: 766px)
+{
+  .recipes{
+    width: 100%;
+    display:block;
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+  .news{
+    display: inline-block;
+    width: 100%;
+
+  }
+}

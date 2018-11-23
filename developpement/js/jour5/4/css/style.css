@@ -1,0 +1,19 @@
+div{
+	width: 800px;
+}
+ul {
+	list-style:none;
+	display:flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+img{
+	margin: 1em;
+	padding:0.5em;
+}
+#photo-list li:hover{
+	background-color: silver;
+}
+.selected{
+	background-color: forestgreen;
+}

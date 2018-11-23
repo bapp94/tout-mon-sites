@@ -1,0 +1,4 @@
+troiswa_platform:
+    resource: "@TROISWAPlatformBundle/Resources/config/routing.yml"
+    prefix:   /platform
+

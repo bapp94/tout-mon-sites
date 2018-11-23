@@ -1,0 +1,54 @@
+
+        <!-- Affichage du template lié à la vue -->
+        <h2><i class="fa fa-check"></i> Payer la commande</h2>
+
+<section class="invoice">
+
+    <p><strong><?=$_SESSION['user']['FirstName'] ?> <?=$_SESSION['user']['LastName'] ?></strong></p>
+    <p><?=$_SESSION['user']['Address'] ?></p>
+    <p><span class="city"><?=$_SESSION['user']['City'] ?></span></p>
+</section>
+
+<table class="generic-table meal-list" id="recap">
+    <caption>Récapitulatif de la commande</caption>
+    <thead>
+        <tr>
+            <th>Nom</th>
+            <th class="number">Quantité</th>
+            <th class="number">Prix Unitaire</th>
+            <th class="number">Prix Total</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <td colspan="3">Total HT</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3">TVA (20 %)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="colorful" colspan="3">Total TTC</td>
+            <td class="colorful"></td>
+        </tr>
+        <tr class="small-notice">
+            <td colspan="4">Commandé le 2018-11-05 14:43:47</td>
+        </tr>
+    </tfoot>
+   
+    </tbody>
+</table>
+
+<hr>
+<h3>Merci de bien vouloir procéder au paiement de la commande.</h3>
+<form class="generic-form" action="<?= $requestUrl ?>/validate" method="POST" name="hidden">
+    <input id ="envoie" type="hidden" name="hidden" value="">
+	<ul>
+		<li>
+			<input class="button button-primary" type="submit" value="Payer">
+			<a class="button button-cancel small" href="<?= $requestUrl ?>/order">Annuler</a>
+		</li>
+	</ul>
+</form>    
+<script src="<?= $wwwUrl ?>/js/payment.js"></script> 

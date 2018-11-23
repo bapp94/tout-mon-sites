@@ -1,0 +1,298 @@
+@font-face {
+  font-family: "bodega";
+  src:url(../fonts/BodegaSans_Black.ttf);
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  margin:0;
+  line-height: 1.5;
+  color:#555;
+  background-color: #333;
+  background-image: url(../img/bg_body.svg);
+  padding: 15px;
+  font-family:"open-sans";
+  font-weight: normal;
+
+}
+img,
+video{
+  width: 100%;
+  height: auto;
+}
+.container {
+  width: 90%;
+  margin-right:auto;
+  margin-left: auto;
+  max-width: 1100px;
+}
+
+/********** Règle du HEADER *************/
+.header-main{
+  overflow: hidden;
+  /* background-color: #1a1a1a; */
+  background: linear-gradient(161deg, white 60%, #292828 60%);
+  width: 100%;
+}
+.logo{
+  width: 100%;
+  padding: 10px;
+}
+.intro img{
+  border: 10px solid white;
+}
+.nav-main ul{
+  list-style: none;
+  text-align: right;
+}
+.nav-main a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-family: "bodega";
+  font-weight: normal;
+  font-size: 1.5em;
+}
+
+.nav-main li{
+  padding:10px;
+}
+.site-title{
+  text-align: center;
+}
+span{
+  color:#fd9d01;
+}
+h1,
+h2,
+h3{
+  color:white;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-family: "bodega";
+}
+/************ RULES MAIN *********************/
+.advanced h2+h2+h2{
+  color:red;
+}
+.advanced h2+p{
+  color:hotpink;
+}
+.pictures img{
+  width: 95%;
+}
+.section-title{
+  border-top: 3px solid rgba(0,0,0,0.1);
+  border-left: 3px solid rgba(0,0,0,0.1);
+  padding: 10px;
+}
+.products{
+  margin:5px;
+  padding-bottom: 10px;
+}
+.item-products{
+  background-color: white;
+  padding: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+.product-title{
+  color: #fd9d01;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #fd9d01;
+}
+.cta{
+  color:white;
+  background-color: #fd9d01;
+  padding: 10px;
+  margin:10px 0;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+}
+.infos{
+ text-align: center;
+ color: white;
+}
+.infos a{
+  text-decoration: none;
+}
+.social-links {
+  padding: 0;
+}
+.social-links li{
+  list-style: none;
+  display: block;
+  width: 100;
+  text-align:center;
+}
+.social-links i{
+  color: white;
+  padding:15px;
+  font-size: 40px;
+}
+.video{
+  margin-bottom: 20px;
+}
+/******************RULES FOOTER *********************/
+.footer-main{
+
+  color:white;
+  padding:20px;
+  margin:30px;
+  text-align: center;
+  box-shadow: 0 0 20px #1a1a1a;
+}
+.nav-footer li{
+  display: inline-block;
+  color:white;
+  padding-right:20px;
+}
+.nav-footer a{
+  color:white;
+  transition: 320ms;
+  display: inline-block;
+}
+.footer-main a:hover{
+    background-color: transparent;
+    color:#208e94;
+    transform: scale(1.5);
+  }
+
+@media screen and (min-width:  767px)/*responsive tablette*/
+{
+  .header-main{
+    background: linear-gradient(140deg , white 63%, #1a1a1a 63%);
+
+  }
+  .nav-main li{
+    padding:20px;
+  }
+
+  .logo{
+    width: 50%;
+    float:left;
+  }
+  .nav-main{
+    float:right;
+    width: 50%;
+    margin-top:50px;
+
+  }
+  .products{
+    font-size: 0;
+    margin: 0;
+  }
+  .section-title{
+    font-size: initial;
+  }
+  .item-products{
+    display: inline-block;
+    width:48%;
+    vertical-align:top;
+    font-size: initial;
+    margin-right:4%;
+    margin-top: 0;
+  }
+.item-products:nth-of-type(2n){
+  margin:0;
+  margin-right:0;
+}
+}
+@media screen and (min-width: 900px){
+  .products{
+    font-size: 0;
+    margin: 0;
+  }
+
+  .item-products{
+    width:32%;
+    font-size: initial;
+    margin-right:2%;
+    margin-top: 0;
+  }
+  .item-products:nth-of-type(2n){
+    margin:0;
+    margin-right:2%;
+  }
+  .item-products:nth-of-type(3n){
+    margin:0;
+    margin-right:0;
+  }
+}
+@media screen and (min-width: 1024px)
+{
+  .header-main{
+
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%
+  }
+
+  body{
+    padding: 0;
+    margin-top: 318px;
+  }
+  .site-title{
+    padding: 20px;
+  }
+  .products{
+    font-size: 0;
+    margin: 0;
+  }
+  .item-products{
+    width:23%;
+    font-size: initial;
+    margin-right:2.66%;
+  }
+  .item-products:nth-of-type(2n){
+    margin-right:2.66%;
+  }
+  .item-products:nth-of-type(3n){
+    margin-right:2.66%;
+  }
+  .item-products:nth-of-type(4n){
+    margin-right: 0;
+  }
+
+  .infos{
+    font-size: 0;
+  }
+  .infos h2{
+    text-align: left;
+  }
+  .social{
+    font-size: initial;
+    width: 48%;
+    display:inline-block;
+    vertical-align: top;
+    padding:10px;
+    margin-right: 2%
+  }
+  .video{
+    font-size: initial;
+    width: 48%;
+    display:inline-block;
+    vertical-align: top;
+    margin-left: 2%;
+    padding:10px;
+  }
+  .social-links li{
+    display: inline-block;
+    padding:25px;
+  }
+  .social-links i{
+    color: white;
+    padding:15px;
+    font-size: 40px;
+    display: inline-block;
+    text-align: center;
+  }
+  }
+  .footer-main{
+    box-shadow: 0 -5px 20px #1a1a1a;
+    margin: 0;
+    width: 100%;
+  }

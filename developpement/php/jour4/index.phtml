@@ -1,0 +1,17 @@
+
+<h2><i class="fa fa-home"></i> Accueil</h2>
+
+<!-- Liste des articles du blog -->
+<ul class="post-list">
+<?php foreach ($display as $key => $displai) {?>
+	<li>
+		<h3><i class="fa fa-hand-o-right"></i><a href="show_post.php?id=<?= $displai['Id'] ?>"><?=$displai['Title'] ?></a></h3>
+		<article><?= $displai['Content'] ?></article>
+		<small>rédigé par <?=$displai['FirstName']?> <?=$displai['LastName']?> le <?= $displai['CreationTimesTamp'] ?></small>
+	</li>
+
+
+
+
+<?php } ?>
+ </ul> 

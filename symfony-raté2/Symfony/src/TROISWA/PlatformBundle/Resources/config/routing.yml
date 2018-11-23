@@ -1,0 +1,27 @@
+troiswa_platform_homepage:
+    path:     /{id}/{name}
+    defaults: { _controller: TROISWAPlatformBundle:Advert:index }
+    requirements:
+        id: \d{3}
+
+
+troiswa_platform_home:
+    path:     /home
+    defaults: { _controller: TROISWAPlatformBundle:Advert:home }
+
+troiswa_platform_add:
+    path:     /add
+    defaults: { _controller: TROISWAPlatformBundle:Advert:add }
+
+
+troiswa_platform_edit:
+    path:     /edit/{id}
+    defaults: { _controller: TROISWAPlatformBundle:Advert:edit }
+    requirements:
+        id: \d+
+
+troiswa_platform_delete:
+    path:     /delete/{id}
+    defaults: { _controller: TROISWAPlatformBundle:Advert:delete }
+    requirements:
+        id: \d+

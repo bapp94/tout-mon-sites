@@ -1,0 +1,44 @@
+*{
+	box-sizing: border-box;
+}
+
+h1{
+	color:orangered;
+	text-align: center;
+}
+
+body{
+	background-color: #333;
+	margin:0;
+	color:orangered;
+
+}
+
+.article-flex{
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin:50px;
+
+}
+.cta{
+	padding:10px;
+	text-align: center;
+
+}
+
+.form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+.radio{
+	margin:30px;
+}
+label{
+	padding:30px;
+}

@@ -1,0 +1,11 @@
+<ul class="movie-list">
+	
+		<?php foreach ($movies as $key => $value) { ?>
+			<li><img src="images/<?= $value['cover'] ?>" alt="photo">
+			<p>
+			<strong><?= $value['title'] ?>  <?= $value['duration'] ?></strong></p>
+
+			</li>
+		
+		<?php }	?>
+</ul>

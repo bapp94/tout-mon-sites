@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang=fr>
+<head>
+	<title>php</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<header>
+		
+	</header>
+	<main>
+	<div>
+        <h1>gestionnaire de tâches !</h1>
+        <?php if(empty($tasks) == false): ?>
+            <!-- Formulaire listant toutes les tâches existantes avec possibilité de suppression. -->
+            <form class="standard-form" action="remove.php" method="POST">
+                <ul class="task-list">
+                    <?php foreach($tasks as $index => $taskData): ?>
+                        <li>
+                            <input id="task-<?= $index ?>" type="checkbox" name="indexes[]" value="<?= $index ?>">
+                            <label for="task-<?= $index ?>" class="<?= $taskData[3] ?> ">
+                                <?= $taskData[0] ?>
+                                <?php if(date_create($taskData[2]) < $now): ?>
+                                    <strong>- en retard</strong>
+                                <?php endif ?>
+                            </label>
+                            <p><?= $taskData[1] ?></p>
+                        </li>
+                    <?php endforeach ?>
+                    <li>
+                        <input type="submit" value="Supprimer" title="Supprimer les tâches sélectionnées">
+                    </li>
+                </ul>
+            </form>
+            <hr>
+        <?php endif ?>
+	</div>	
+	<div class="form">
+		<form method="post" action="add.php"  >
+			<fieldset>
+				<legend>informations sur la tâche</legend>
+					<article class="article-flex">
+					<label>Titre</label>
+					<input type="texte" name="title">
+					</article>
+					<article class="article-flex">
+					<label>Tâches</label>
+					<textarea name="tache"></textarea>
+					</article>
+					<article class="article-flex">
+					<label>Date de fin</label>
+					<select name="jour">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+						<option value="13">13</option>
+						<option value="14">14</option>
+						<option value="15">15</option>
+						<option value="16">16</option>
+						<option value="17">17</option>
+						<option value="18">18</option>
+						<option value="19">19</option>
+						<option value="20">20</option>
+						<option value="21">21</option>
+						<option value="22">22</option>
+						<option value="23">23</option>
+						<option value="24">24</option>
+						<option value="25">25</option>
+						<option value="26">26</option>
+						<option value="27">27</option>
+						<option value="28">28</option>
+						<option value="29">29</option>
+						<option value="30">30</option>
+						<option value="31">31</option>
+					</select>
+					<select name="mois">
+						<option value="janvier">janvier</option>
+						<option value="février">février</option>
+						<option value="mars">mars</option>
+						<option value="avril">avril</option>
+						<option value="mai">mai</option>
+						<option value="juin">juin</option>
+						<option value="juillet">juillet</option>
+						<option value="aout">aout</option>
+						<option value="septembre">septembre</option>
+						<option value="octobre">octobre</option>
+						<option value="novembre">novembre</option>
+						<option value="decembre">decembre</option>
+					</select>
+					<select name="annee">
+						<option value="2018">2018</option>
+						<option value="2019">2019</option>
+						<option value="2020">2020</option>
+						<option value="2021">2021</option>
+					</select>
+					</article>
+					<article class="article-flex ">
+					<input type="radio" name="priority" value="basse">
+					<label class="radio">basse</label>
+					<input type="radio" name="priority" value="moyenne">
+					<label class="radio">moyenne</label>
+					<input type="radio" name="priority" value="haute">
+					<label class="radio">haute</label>
+					</article>
+
+                    <article class="article-flex ">
+					<input class="cta"type="submit" value="APPUI!">
+                    </article>
+
+			</fieldset>
+			
+		</form>
+		</div>
+	</main>
+</body>
+</html>

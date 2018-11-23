@@ -1,0 +1,19 @@
+{% extends "commandeBundle::layout.html.twig" %}
+{% block title %}
+  bon de commande - {{ parent() }}
+{% endblock %}
+
+{% block body %}
+
+  {# On définit un sous-titre commun à toutes les pages du bundle, par exemple #}
+  {% block page_title %}
+  	<h1>Ma commande</h1>
+  {% endblock %}
+
+ 
+
+  {# On définit un nouveau bloc, que les vues du bundle pourront remplir #}
+  {% block troiswaplatform_body %}
+  {% endblock %}
+
+{% endblock %}

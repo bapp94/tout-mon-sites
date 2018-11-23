@@ -1,0 +1,27 @@
+
+header {
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAtxLU7dj6Pkb5pwiw08h9ti89fdn_T23kERG565sSOt_BK5fF);
+	width:100%;
+	padding:208px;
+}
+body{
+	background-image: url(https://media.giphy.com/media/OaegIr7dIGfjq/giphy.gif);
+	text-align: center;
+	margin:0;
+}
+h1,
+h2{
+	
+	color:yellow;
+}
+input{
+
+	background-color: green;
+}
+#affiche{
+	background-color: tomato;
+	font-size:2rem;
+}
+/*.hide{
+	display: none;
+}*/

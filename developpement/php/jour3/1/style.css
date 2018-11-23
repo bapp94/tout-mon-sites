@@ -1,0 +1,51 @@
+body{
+	background-color:whitesmoke;
+}
+
+main
+{
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+h1{
+	color:#00968B;
+}
+h2{
+	text-align: center;
+}
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+thead{
+	color:#00968B;
+	font-weight: bold;
+	background-color: darkslategray;
+}
+tr{
+	background-color: silver;
+}
+tr:nth-of-type(2n){
+	background-color: gray;
+}
+ table a{
+	text-decoration: none;
+	color: #7F3734;
+}
+.right{
+	text-align: right;
+}
+.right h2{
+	text-align: right;
+	color:#00968B;
+}
+div a{
+	text-decoration: none;
+	color: #7F3734;
+}
+.manger{
+	text-align: right;
+	margin-right: 20px;
+}

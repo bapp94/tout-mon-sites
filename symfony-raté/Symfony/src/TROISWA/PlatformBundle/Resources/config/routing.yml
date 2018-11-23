@@ -1,0 +1,6 @@
+troiswa_platform_homepage:
+    path:     /{id}/{name}
+    defaults: { _controller: TROISWAPlatformBundle:Advert:index }
+    requirements:
+        id: \d{3}
+    

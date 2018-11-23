@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "bodega";
+  src:url(../fonts/BodegaSans_Black.ttf);
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  margin:0;
+  line-height: 1.5;
+  color:#555;
+  background-color: #333;
+  background-image: url(../img/bg_body.svg);
+  padding: 15px;
+  font-family:"open-sans";
+  font-weight: normal;
+
+}
+img,
+video{
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  width: 90%;
+  margin-right:auto;
+  margin-left: auto;
+  max-width: 1100px;
+}
+
+/********** Règle du HEADER *************/
+.header-main{
+  overflow: hidden;
+  /* background-color: #1a1a1a; */
+  background: linear-gradient(161deg, white 60%, #292828 60%);
+  width: 100%;
+}
+.logo{
+  width: 400px;
+  padding: 10px;
+}
+
+.nav-main ul{
+  list-style: none;
+  text-align: right;
+}
+.nav-main a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-family: "bodega";
+  font-weight: normal;
+  font-size: 1.5em;
+}
+
+.nav-main li{
+  padding:10px;
+}
+.product-title{
+  color: #fd9d01;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #fd9d01;
+}
+.cta{
+  color:white;
+  background-color: #fd9d01;
+  padding: 10px;
+  margin:10px 0;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+}
+.item-products{
+  background-color: white;
+  padding: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+.products{
+  margin:5px;
+  padding-bottom: 10px;
+}
+span{
+  color:#fd9d01;
+}
+.section-title{
+  border-top: 3px solid rgba(0,0,0,0.1);
+  border-left: 3px solid rgba(0,0,0,0.1);
+  padding: 10px;
+}
+
+.footer-main{
+  height:100px;
+  background-color: #fd9d01;
+}
+.footer-main ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}.footer-main a {
+  text-decoration: none;
+  color: red;
+}
+.next-previous{
+  background-color: purple;
+  display: flex;
+  justify-content: space-between;
+  padding:10px;
+  margin:20px 0 ;
+}
+.next-previous a{
+  text-decoration: none;
+  color :magenta;
+  padding:10px;
+}
+.titler{
+  color:red;
+  font-size: 6rem;
+  text-align: center;
+}

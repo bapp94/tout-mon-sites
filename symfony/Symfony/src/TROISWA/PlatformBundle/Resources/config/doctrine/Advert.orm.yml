@@ -1,0 +1,24 @@
+TROISWA\PlatformBundle\Entity\Advert:
+    type: entity
+    table: null
+    repositoryClass: TROISWA\PlatformBundle\Repository\AdvertRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        date:
+            type: datetime
+        title:
+            type: string
+            length: 255
+        author:
+            type: string
+            length: 255
+        content:
+            type: text
+        published:
+            type: boolean
+    lifecycleCallbacks: {  }

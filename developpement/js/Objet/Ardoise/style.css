@@ -1,0 +1,99 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin:0;
+}
+.container{
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1000px;
+}
+.hide{
+	display: none;
+}
+header{
+	height: 200px;
+	background-color: #1C81AA;
+}
+.can{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+body{
+	background-color: #FFF3C0;
+}
+
+
+#moncanvas,
+#slate2{
+	box-shadow: 0  0 8px 2px ;
+	background-color: black;
+	margin:10px;
+}
+.list li  {
+	padding: 20px;
+	list-style-type: none;
+}
+label{
+	font-size: 1.5rem;
+	color: maroon;
+}
+.black{
+	background-color: black;
+}
+.pen-color
+{
+    /* structure */
+    display: inline-block;
+    height: 2em;
+    position: relative;
+    top: 0.5em;
+    width: 2em;
+
+    /* presentation */
+    border-radius: 1em;
+}
+.black
+{
+    background-color: black;
+}
+.blue
+{
+    background-color: #0378A6;
+}
+.green
+{
+    background-color: #13B813;
+}
+.brown
+{
+    background-color: #5C2121;
+}
+.red
+{
+    background-color: #B9121B;
+}
+.seagreen
+{
+    background-color: #029E9A;
+}
+.yellow
+{
+    background-color: #FFBD07;
+}
+
+.pen-color + .pen-color
+{
+    margin-left: 1em;
+}
+
+.cta{
+	padding:10px;
+	margin:5px;
+	border:none;
+	background-color: #c5c0c0;
+	box-shadow: 0  0 4px 1px ;
+}

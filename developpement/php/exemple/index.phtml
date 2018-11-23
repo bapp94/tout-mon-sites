@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>title</title>
+</head>
+<body>
+	<h1>Bienvenue sur mon site</h1>
+
+	<?php if($name == 'Baptis') { ?>
+		<p>Je suis <?= $name ?></p>
+	<?php } ?>
+
+	<?php if($name == 'Baptiste'): ?>
+		<p>Je suis <?= $name ?></p>
+	<?php endif; ?>
+
+	<form action="reception.php" method="POST">
+		<input type="text" name="a">
+		<input type="text" name="b">
+		<input type="text" name="c">
+		<input type="submit" name="">
+	</form>
+</body>
+</html>

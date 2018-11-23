@@ -1,0 +1,31 @@
+<h2><i class="fa fa-cogs"></i> Panneau d'administration</h2>
+
+<nav>
+    <a href="add_post.php">Rédiger un nouvel article</a>
+</nav>
+
+<table>
+    <caption>Liste des articles</caption>
+    <thead>
+        <tr>
+            <th>Titre</th>
+            <th>Article</th>
+            <th>Auteur</th>
+            <th>Catégorie</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach ($ShowArticle as $List) { ?>
+        <tr>
+            <td><a href="show_post.php?id=<?=$List['id']?>"><?=$List['Title']?></a></td>
+            <td><?=$List['Content']?></td>
+            <td><?=$List['FirstName']?> <?=$List['LastName']?></td>
+            <td><?=$List['Name']?></td>
+            <td><a href="edit_post.php?id=<?=$List['id']?>"><i class="fas fa-pen-nib"></i></a><a href="delete_post.php?id=<?=$List['id']?>"><i class="fas fa-ban"></i></a></td>
+        </tr>
+        <?php }?>
+
+
+    </tbody>
+</table>

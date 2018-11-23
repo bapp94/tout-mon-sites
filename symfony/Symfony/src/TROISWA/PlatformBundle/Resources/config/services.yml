@@ -1,0 +1,3 @@
+services:
+    troiswa_platform.antispam:
+        class: TROISWA\PlatformBundle\Antispam\TROISWAAntispam

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Bon de commandes</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		
+	</header>
+	<main>
+		<div>
+			<h1>Bons de commmande</h1>
+			<a href="index.php">Retourner a l'accueil</a>
+		</div>
+		<div class="right">
+			<h2><?= $client[0]['customerName'] ?></h2>
+			<h3><?= $client[0]['contactLastName'] ?>  <?= $ordery[0]['contactFirstName'] ?></h3>
+			<p><?= $client[0]['addressLine1'] ?></p>
+			<p><?= $client[0]['city'] ?></p>
+		</div>
+		<hr>
+		<div>
+			<h2> Bon de commande n°<?= $orderNumber ?></h2>
+		</div>
+		
+		<table>
+
+			<thead>
+				<tr>
+					<th>Produit</th>
+					<th>Prix Unitaire</th>
+					<th>Quantité</th>
+					<th>Prix Total</th>
+				</tr>
+			</thead>
+			<tbody>
+				<?php foreach  ($orderdetails as $index => $orderdetails) {  ?>
+        		<tr>
+        			<td><?= $orderdetails['productName'] ?></td>
+        			<td><?= $orderdetails['priceEach'] ?></td>
+        			<td><?= $orderdetails['quantityOrdered'] ?></td>
+        			<td><?= round($orderdetails['total'],2) ?></td>
+        		</tr>
+        	
+        	<?php } ?>
+        		<tr>
+        			<td class="manger" colspan="3">Montant Total HT</td>
+        			<td><?= $somme1 ?> €</td>
+        		</tr>
+        		<tr>
+        			<td class="manger" colspan="3">Montant TVA</td>
+        			<td><?= $somme1*0.2 ?> €</td>
+        		</tr>
+        		<tr>
+        			<td class="manger" colspan="3">Montant Total TTC</td>
+        			<td><?= $somme1*1.2 ?> €</td>
+        		</tr>
+
+			</tbody>
+		</table>
+	</main>
+</body>
+</html>
+
+
